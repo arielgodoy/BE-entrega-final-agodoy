@@ -1,0 +1,31 @@
+### users
+get http://localhost:1010/api/users/
+
+### user
+get http://localhost:1010/api/users/65c197bddb2c5767e6671d80
+
+### user
+post http://localhost:1010/api/users
+Content-Type: application/json
+
+{
+    "first_name": "ARIEL",        
+    "last_name":"Godoy",
+    "email": "12@gmail.com",
+    "password": "1",
+    "role": "admin"
+}
+
+### put user
+put http://localhost:1010/api/users/65c197bddb2c5767e6671d80
+
+Content-Type: application/json
+
+{
+    "first_name": "Godoy",        
+    "last_name":"Godoy",
+    "email": "godoygomez@hotmail.com",
+    "password": "1",
+    "role": "admin"
+}
+

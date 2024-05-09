@@ -1,0 +1,35 @@
+### PALABRA
+GET http://localhost:1010/api/sessions/prueba/123hola.com
+Content-Type: application/json
+
+
+
+### login de usuario
+post http://localhost:1010/api/sessions/login?email=arielgodoy@gmail.com&password=123456
+
+Content-Type: application/json
+
+{
+    "username": "arielgodoy@gmail.com",
+    "password": "123456"
+}
+
+### current
+get http://localhost:1010/api/sessions/current
+Content-Type: application/json
+authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1YzAzZTc2YjkwMzAzNzE4NWE4M2VhYSIsImZpcnN0X25hbWUiOiJBcmllbCAiLCJsYXN0X25hbWUiOiJHT0RPWSIsInJvbGUiOiJhZG1pbiIsImVtYWlsIjoiYXJpZWxnb2RveUBnbWFpbC5jb20iLCJpYXQiOjE3MDc2MTA3NjgsImV4cCI6MTcwNzY5NzE2OH0.SBI6hspTQlWLtxik4BfjFMPWyXoyHULszSkdwJWpnOk
+
+
+
+### post de register
+post http://localhost:1010/api/sessions/register
+Content-Type: application/json
+
+{
+    "first_name": "Godoy",        
+    "last_name":"Godoy",
+    "email": "1@gmail.com",
+    "password": "1",
+    "role": "admin"
+}
+
